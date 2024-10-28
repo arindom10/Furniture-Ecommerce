@@ -28,7 +28,7 @@ const Home = () => {
                   whileTap={{ scale: 1.2 }}
                   className="buy__button"
                 >
-                  <Link to="shop">SHOP NOW</Link>
+                  <Link to="/shop">SHOP NOW</Link>
                 </motion.button>
               </div>
             </Col>
