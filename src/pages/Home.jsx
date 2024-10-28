@@ -2,6 +2,8 @@ import React from "react";
 import Helmet from "../components/Helmet/Helmet";
 import "../styles/home.css";
 
+import Services from "../Services/Services";
+
 import { Container, Row, Col } from "reactstrap";
 import heroImg from "../assets/images/hero-img.png";
 import { Link } from "react-router-dom";
@@ -40,6 +42,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+      <Services />
     </Helmet>
   );
 };
