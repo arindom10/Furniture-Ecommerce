@@ -1,6 +1,6 @@
 import React from "react";
 
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import "./header.css";
 
@@ -35,7 +35,9 @@ const Header = () => {
             <div className="logo">
               <img src={logo} alt="logo" />
               <div>
-                <h1>Multimart</h1>
+                <Link className="logo__h" to="/home">
+                  Multimart
+                </Link>
               </div>
             </div>
 
