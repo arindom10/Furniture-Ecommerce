@@ -22,9 +22,10 @@ const Home = () => {
                 <p className="hero__subtitle">Trending Products in {year}</p>
                 <h2>Make Your Interior More Minimalistic & Modern</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Mollitia voluptate totam sunt rerum assumenda blanditiis nobis
-                  neque facilis! Alias, sequi?
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Earum nesciunt ipsam laborum dicta nisi est maxime labore.
+                  Praesentium deleniti commodi sapiente placeat, culpa expedita
+                  impedit.
                 </p>
                 <motion.button
                   whileTap={{ scale: 1.2 }}
