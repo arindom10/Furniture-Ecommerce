@@ -61,3 +61,12 @@ img {
 section {
   padding: 60px 0px;
 }
+
+.text_center {
+  text-align: center;
+}
+
+.section_title {
+  color: var(--primary-color);
+  font-weight: 600;
+}

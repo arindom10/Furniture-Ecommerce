@@ -9,6 +9,7 @@ import heroImg from "../assets/images/hero-img.png";
 import { Link } from "react-router-dom";
 
 import { motion } from "framer-motion";
+import ProductsList from "../components/UI/ProductsList";
 
 const Home = () => {
   const year = new Date().getFullYear();
@@ -44,6 +45,16 @@ const Home = () => {
         </Container>
       </section>
       <Services />
+      <section className="trending_products">
+        <Container>
+          <Row>
+            <Col lg="12" className="text_center">
+              <h2 className="section_title">Treading Products</h2>
+            </Col>
+            <ProductsList />
+          </Row>
+        </Container>
+      </section>
     </Helmet>
   );
 };
