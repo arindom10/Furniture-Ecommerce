@@ -11,9 +11,11 @@ const ProductCard = () => {
         <div className="product_img">
           <img src={productImg} alt="" />
         </div>
-        <h3 className="product_name">Modern Armchair</h3>
-        <span>Chair</span>
-        <div className="product_cart-bottom">
+        <div className="p-2 product_info">
+          <h3 className="product_name">Modern Armchair</h3>
+          <span className="text-center d-block">Chair</span>
+        </div>
+        <div className="product_card-bottom d-flex align-items-center justify-content-between p-2">
           <span className="price">$299</span>
           <span>
             <i class="ri-add-line"></i>
