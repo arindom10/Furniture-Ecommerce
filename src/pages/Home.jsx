@@ -10,7 +10,9 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Products from "../assets/data/products";
 import ProductsList from "../components/UI/ProductsList";
-import products from "../assets/data/products";
+
+import counterImg from "../assets/images/counter-timer-img.png";
+import Clock from "../components/UI/Clock";
 
 const Home = () => {
   const [trendingProducts, setTrendingProducts] = useState([]);
@@ -81,6 +83,29 @@ const Home = () => {
               <h2 className="section_title">Best Sales</h2>
             </Col>
             <ProductsList data={bestSalesProducts} />
+          </Row>
+        </Container>
+      </section>
+      <section className="timer__Count">
+        <Container>
+          <Row>
+            <Col lg="6" md="6">
+              <div className="clock__top__content">
+                <h4 className="text-white fs-6">Limited Offers</h4>
+                <h3 className="text-white fs-4">Quality Armchair</h3>
+              </div>
+              <Clock />
+              <motion.button
+                whileTap={{ scale: 1.2 }}
+                className="buy__button store__btn"
+              >
+                <Link to="/shop">Visit Store</Link>
+              </motion.button>
+            </Col>
+
+            <Col lg="6" md="6" className="text-end">
+              <img src={counterImg} alt="" />
+            </Col>
           </Row>
         </Container>
       </section>
