@@ -2,11 +2,15 @@
   cursor: pointer;
 }
 
-.product_info h3 {
+.product_info h3 a {
   font-size: 1.1rem;
   color: var(--primary-color);
   font-weight: 600;
   margin-top: 15px;
+}
+
+.product_info a:hover {
+  color: inherit;
 }
 
 .product_info span {
