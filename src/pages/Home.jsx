@@ -106,7 +106,7 @@ const Home = () => {
       <section className="timer__Count">
         <Container>
           <Row>
-            <Col lg="6" md="6">
+            <Col lg="6" md="12" className="count__down__col">
               <div className="clock__top__content">
                 <h4 className="text-white fs-6">Limited Offers</h4>
                 <h3 className="text-white fs-4">Quality Armchair</h3>
@@ -120,7 +120,7 @@ const Home = () => {
               </motion.button>
             </Col>
 
-            <Col lg="6" md="6" className="text-end">
+            <Col lg="6" md="12" className="text-end counter__img">
               <img src={counterImg} alt="" />
             </Col>
           </Row>
