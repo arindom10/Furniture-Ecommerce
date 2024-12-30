@@ -37,7 +37,7 @@ const Home = () => {
     );
 
     const filteredWirelessProducts = Products.filter(
-      (item) => item.category === "wareless"
+      (item) => item.category === "wireless"
     );
     const filteredPopularProducts = Products.filter(
       (item) => item.category === "watch"
