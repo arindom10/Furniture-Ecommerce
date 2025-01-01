@@ -100,7 +100,7 @@ const Footer = () => {
           </Col>
           <Col lg="12">
             <p className="footer__copyright text-center">
-              CopyRight {year} developed by Arindom Kundu, All rights reserved.{" "}
+              CopyRight {year} Developed by Arindom Kundu, All rights reserved.{" "}
             </p>
           </Col>
         </Row>
