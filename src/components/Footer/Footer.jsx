@@ -79,7 +79,7 @@ const Footer = () => {
                   <span>
                     <i className="ri-map-pin-line"></i>
                   </span>
-                  <p>222/3, West Agargaon, Dhaka-1207</p>
+                  <p>222/3, Siam Manzil, West Agargaon, Dhaka-1207</p>
                 </ListGroupItem>
 
                 <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
