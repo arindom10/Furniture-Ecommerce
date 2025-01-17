@@ -1,10 +1,28 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import "../../styles/product-card.css";
 import { Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
+import { useDispatch } from "react-redux";
+import { cartActions } from "../../redux/slices/cartSlice";
+
 const ProductCard = ({ item }) => {
+  // const dispatch = useDispatch();
+
+  // const addToCart = () => {
+  //   dispatch(
+  //     cartActions.addItem({
+  //       id: item.id,
+  //       productName: item.productName,
+  //       imgUrl: item.imgUrl,
+  //       price: item.price,
+  //     })
+  //   );
+  //   alert("Item added to cart");
+  // };
+
   return (
     <Col lg="3" md="4" className="mb-2">
       <div className="product_item">
