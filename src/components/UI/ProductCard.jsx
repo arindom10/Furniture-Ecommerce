@@ -4,23 +4,21 @@ import { motion } from "framer-motion";
 import "../../styles/product-card.css";
 import { Col } from "reactstrap";
 import { Link } from "react-router-dom";
-
-import { useDispatch } from "react-redux";
 import { cartActions } from "../../redux/slices/cartSlice";
+import { useDispatch } from "react-redux";
 
 const ProductCard = ({ item }) => {
   // const dispatch = useDispatch();
 
-  // const addToCart = () => {
+  // const addToCartHandler = () => {
   //   dispatch(
   //     cartActions.addItem({
   //       id: item.id,
   //       productName: item.productName,
-  //       imgUrl: item.imgUrl,
   //       price: item.price,
+  //       image: item.imgUrl,
   //     })
   //   );
-  //   alert("Item added to cart");
   // };
 
   return (
@@ -44,6 +42,16 @@ const ProductCard = ({ item }) => {
       </div>
     </Col>
   );
+};
+
+ProductCard.propTypes = {
+  item: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    productName: PropTypes.string.isRequired,
+    imgUrl: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default ProductCard;

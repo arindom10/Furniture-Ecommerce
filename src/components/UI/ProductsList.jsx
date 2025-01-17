@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import ProductCard from "./ProductCard";
 
 const ProductsList = ({ data }) => {
@@ -9,6 +10,9 @@ const ProductsList = ({ data }) => {
       ))}
     </>
   );
+};
+ProductsList.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default ProductsList;
