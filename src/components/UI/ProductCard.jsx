@@ -13,10 +13,10 @@ const ProductCard = ({ item }) => {
   // const addToCartHandler = () => {
   //   dispatch(
   //     cartActions.addItem({
-  //       id: item.id,
+  //       id: item.id.toString(), // Ensure id is a string
   //       productName: item.productName,
   //       price: item.price,
-  //       image: item.imgUrl,
+  //       image: item.imgUrl, // Ensure correct property name
   //     })
   //   );
   // };
@@ -25,7 +25,11 @@ const ProductCard = ({ item }) => {
     <Col lg="3" md="4" className="mb-2">
       <div className="product_item">
         <div className="product_img">
-          <motion.img whileHover={{ scale: 0.9 }} src={item.imgUrl} alt="" />
+          <motion.img
+            whileHover={{ scale: 0.9 }}
+            src={item.imgUrl}
+            alt={item.productName}
+          />
         </div>
         <div className="p-2 product_info">
           <h3 className="product_name">
@@ -46,7 +50,7 @@ const ProductCard = ({ item }) => {
 
 ProductCard.propTypes = {
   item: PropTypes.shape({
-    id: PropTypes.string.isRequired,
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     productName: PropTypes.string.isRequired,
     imgUrl: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
